@@ -1,0 +1,34 @@
+1. git init
+2. git add .gitignore
+   git add pom.xml
+   git add src/main/java/com/epam/homework/vcs/App.java
+   git commit -am "Initial commit"
+3. git checkout -b A
+   git add src/main/java/com/epam/homework/vcs/App.java
+   git commit -am "Made some changes"
+4. git checkout master
+   git cherry-pick A
+5. git checkout -b B
+   git add src/main/java/com/epam/homework/vcs/App.java
+   git commit -am "Made more changes"
+6. git checkout master
+   git rebase B
+7. git checkout -b C
+   git add src/main/java/com/epam/homework/vcs/App.java
+   git commit -am "Made yet more changes"
+8. git remote add origin https://github.com/efimpoberezkin/vcs_test.git
+   git push origin master
+   git push origin A
+   git push origin B
+   git push origin C
+9. after pull request:
+   git pull origin master
+   git pull
+10.git checkout master
+   git add src/main/java/com/epam/homework/vcs/App.java
+   git commit -am "Made even more changes"
+   git tag test_tag master
+11.git revert origin/C
+   git mergetool
+   git revert --continue
+12.git push origin --all
