@@ -28,3 +28,4 @@
    git mergetool
    git revert --continue
 12.git push origin --all
+   git push origin test_tag
