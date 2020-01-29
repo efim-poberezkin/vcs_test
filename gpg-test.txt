@@ -1,1 +1,2 @@
 testing signing commit with gpg
+testing passphrase caching
